@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -13,7 +13,7 @@ export default function App() {
     return (
         <Router>
             <Navbar />
-            <div className='w-full h-auto'>
+            <div className='w-full h-full'>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
