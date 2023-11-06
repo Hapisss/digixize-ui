@@ -12,16 +12,18 @@ export default function App() {
 
     return (
         <Router>
-            <Navbar />
-            <div className='w-full h-full'>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/support" element={<Support />} />
-                </Routes>
+            <div className='flex flex-col gap-[132px]'>
+                <Navbar />
+                <div className='w-full h-full'>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route path="/blog" element={<Blog />} />
+                        <Route path="/support" element={<Support />} />
+                    </Routes>
+                </div>
             </div>
         </Router>
     )
